@@ -88,6 +88,7 @@ function subirComentario(){
 
   var text4 = document.getElementById("textoUsuario").value;
 
+  if(text4 !== ''){
   //crear elemento parrafo
   var node = document.createElement("p");
   var textnode = document.createTextNode(text4);
@@ -121,5 +122,7 @@ function subirComentario(){
   var para5= document.getElementById("comentarios");
   para5.insertBefore(cln, para5.childNodes[1]);
   console.log(itm,cln,para5)
-*/
+*/}else{
+    alert("no has escrito nada!!!")
+}
 }
