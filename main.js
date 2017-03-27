@@ -85,7 +85,7 @@ function fondoColor(op) {
 }
 
 function subirComentario(){
-
+/*
   var text4 = document.getElementById("textoUsuario").value;
 
   if(text4 !== ''){
@@ -113,16 +113,21 @@ function subirComentario(){
   // insertar linea antes de
   var para2 = document.getElementById("comentarios");
   para2.insertBefore(node2, para2.childNodes[0]);
-/*
-
+*/
 
 //clonar textitoooo
-  var itm = document.getElementById("contenidoUsuario").lastChild;
+  var itm = document.getElementById("contenidoUsuario");
   var cln = itm.cloneNode(true);
+  cln.id = Date.now();
   var para5= document.getElementById("comentarios");
   para5.insertBefore(cln, para5.childNodes[1]);
-  console.log(itm,cln,para5)
-*/}else{
+
+  itm.innerHTML="";
+  document.getElementById("textoUsuario").value="";
+
+/*
+}else{
     alert("no has escrito nada!!!")
-}
+}*/
+
 }
