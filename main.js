@@ -1,3 +1,4 @@
+
 function mostrar(){
   var text= document.getElementById("textoUsuario").value;
   document.getElementById("contenidoUsuario").innerHTML = text;
@@ -84,7 +85,24 @@ function fondoColor(op) {
 }
 
 function subirComentario(){
-  var fondito = fondoColor();
-  var texto = document.getElementById("contenidoUsuario").value;
-  document.getElementById("comentarios").value = texto;
+  var text= document.getElementById("textoUsuario").value;
+
+  var node = document.createElement("p");
+  var textnode = document.createTextNode(text);
+
+  var node2 = document.createElement("hr");
+  var textnode2 = document.createTextNode("");
+
+  node.appendChild(textnode);
+  document.getElementById("comentarios").appendChild(node);
+
+  node.appendChild(textnode2);
+  document.getElementById("comentarios").appendChild(node2);
+
+  var para = document.getElementById("comentarios");
+  para.insertBefore(node, para.childNodes[0]);
+
+  var para2 = document.getElementById("comentarios");
+  para2.insertBefore(node2, para2.childNodes[0]);
+
 }
