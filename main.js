@@ -40,7 +40,7 @@ function color(op) {
   switch (op) {
     case 1:
       document.getElementById("contenidoUsuario").style.color = "blue";
-      break;x
+      break;
 
     case 2:
       document.getElementById("contenidoUsuario").style.color = "pink";
@@ -86,13 +86,18 @@ function fondoColor(op) {
 
 function subirComentario(){
   var text= document.getElementById("textoUsuario").value;
+  var text4= document.getElementById("contenidoUsuario").value;
 
+/*
+//poner texto antes de otro
   var node = document.createElement("p");
   var textnode = document.createTextNode(text);
-
+*/
   var node2 = document.createElement("hr");
   var textnode2 = document.createTextNode("");
+/*
 
+// poner texto antes de otro
   node.appendChild(textnode);
   document.getElementById("comentarios").appendChild(node);
 
@@ -101,8 +106,17 @@ function subirComentario(){
 
   var para = document.getElementById("comentarios");
   para.insertBefore(node, para.childNodes[0]);
+*/
 
+//poner linea
   var para2 = document.getElementById("comentarios");
   para2.insertBefore(node2, para2.childNodes[0]);
+
+//clonar textitoooo
+  var itm = document.getElementById("contenidoUsuario").lastChild;
+  var cln = itm.cloneNode(true);
+  var para5= document.getElementById("comentarios");
+  para2.insertBefore(cln, para2.childNodes[0]);
+
 
 }
