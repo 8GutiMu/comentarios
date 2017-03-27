@@ -1,0 +1,122 @@
+/*Agregar tipografias de mi computadora*/
+@font-face{
+  font-family: "gloss";
+  src: url("fuentes/Gloss_And_Bloom.ttf");
+}
+@font-face{
+  font-family: "free";
+  src: url("fuentes/FREESCPT.TTF");
+}
+
+/*TITULO*/
+h1{
+  font-family: "gloss";
+  color: #EBF5F5;
+  text-shadow: 2px 2px 2px #000000;
+}
+/*TITULO2*/
+h2{
+  font-family: "gloss";
+  color: #7CA8A8;
+  text-shadow: 2px 1px 2px #000000;
+}
+/*TITULO3*/
+h3{
+  font-family: "gloss";
+  color: #7CA8A8;
+  text-shadow: 2px 2px #000000;
+}
+/*texto usuariooo*/
+p{
+  font-family: helvetica;
+  text-shadow: 1px 1px #000000;
+}
+/*FONDO*/
+body{
+background-image: url("imagenes/Fog-in-the-mountains.jpg");
+background-size: 100%;
+}
+/*Botones Classe tamaños*/
+.botonimagen{
+  background-repeat:no-repeat;
+  background-size: contain;
+  height:30px;
+  width:30px;
+  background-position:center;
+  }
+  #botonEnviar{
+    border-radius: 2px;
+    background-color: #567575;
+    color: white;
+    font-family: "free";
+    border: none;
+    text-align: center;
+    font-size: 26px;
+    }
+
+  #botonEnviar:hover {
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+  /*caja de texto colores */
+  #textoUsuario {
+    background-color: rgba(113, 113, 113, 0.6);
+    width:50%;
+    min-height: 80px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    /* estilo textooooo */
+    font-family: helvetica;
+    font-size: 19px;
+    color: white;
+    line-height: 7px;
+    text-align: left;
+    resize: none;
+    text-shadow: 1px 1px #000000;
+
+  }
+
+  .dropbtn {
+    background-repeat:no-repeat;
+    background-size: contain;
+    height:30px;
+    width:30px;
+    background-position:center;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 2px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgba(0,0,0,0.2)}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}

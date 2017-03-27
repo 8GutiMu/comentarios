@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BLOG GUTIMU</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+
+    <h1>Comentarios</h1>
+      <div id="comentarios" style="font-family: Helvetica">
+
+             Prueba
+            <hr>
+
+      </div>
+
+  <div id="crear">
+    <h2>Crear nuevo contenido</h2>
+
+    <input type="button" class="botonimagen" onclick="texto(1)" style="background-image:url(imagenes/grande.png);" />
+    <input type="button" class="botonimagen" onclick="texto(2)" style="background-image:url(imagenes/mediano.png);"></button>
+    <input type="button" class="botonimagen" onclick="texto(3)" style="background-image:url(imagenes/chico.png);"></button>
+
+      <div class="dropdown">
+      <input type="button" class="dropbtn" style="background-image:url(imagenes/fondo.png)";></button>
+        <div class="dropdown-content">
+          <input type="button" onclick="fondoColor(1);" style="background-color: blue">
+          <input type="button" onclick="fondoColor(2);" style="background-color: pink">
+          <input type="button" onclick="fondoColor(3);" style="background-color: purple">
+          <input type="button" onclick="fondoColor(4);" style="background-color: black">
+          <input type="button" onclick="fondoColor(5);" style="background-color: white">
+        </div>
+      </div>
+
+      <div class="dropdown">
+      <input type="button" class="dropbtn" style="background-image:url(imagenes/color.png)";></button>
+        <div class="dropdown-content">
+          <input type="button" onclick="color(1);" style="background-color: blue">
+          <input type="button" onclick="color(2);" style="background-color: pink">
+          <input type="button" onclick="color(3);" style="background-color: purple">
+          <input type="button" onclick="color(4);" style="background-color: black">
+        </div>
+      </div>
+
+    <input type="button" class="botonimagen" onclick="alineacion(1)" style="background-image:url(imagenes/derecha.png);"></button>
+    <input type="button" class="botonimagen" onclick="alineacion(2)" style="background-image:url(imagenes/centro.png);"></button>
+    <input type="button" class="botonimagen" onclick="alineacion(3)" style="background-image:url(imagenes/izquierda.png);"></button>
+    </div>
+
+
+    <textarea id="textoUsuario" oninput="mostrar();" placeholder="Escribe tu comentario aqui..."></textarea>
+
+    <h3> Contenido</h3>
+    <p id="contenidoUsuario" style="font-size:12px;"></p>
+    <button id="botonEnviar" type="button" value="button" onclick="subirComentario();">Enviar</button>
+
+  </body>
+</html>
