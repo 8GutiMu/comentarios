@@ -77,7 +77,7 @@ function fondoColor(op) {
       return 4;
       break;
     case 5:
-      document.getElementById("contenidoUsuario").style.backgroundColor = "none";
+      document.getElementById("contenidoUsuario").style.backgroundColor = "white";
       return 5;
       break;
 
@@ -85,38 +85,41 @@ function fondoColor(op) {
 }
 
 function subirComentario(){
-  var text= document.getElementById("textoUsuario").value;
-  var text4= document.getElementById("contenidoUsuario").value;
 
-/*
-//poner texto antes de otro
+  var text4 = document.getElementById("textoUsuario").value;
+
+  //crear elemento parrafo
   var node = document.createElement("p");
-  var textnode = document.createTextNode(text);
-*/
+  var textnode = document.createTextNode(text4);
+
+  //crear elemento linea
   var node2 = document.createElement("hr");
   var textnode2 = document.createTextNode("");
-/*
 
-// poner texto antes de otro
+  //nodo de parrafo
   node.appendChild(textnode);
   document.getElementById("comentarios").appendChild(node);
 
+  //nodo de linea
   node.appendChild(textnode2);
   document.getElementById("comentarios").appendChild(node2);
 
+  // insetar parrafo antes de el otro
   var para = document.getElementById("comentarios");
   para.insertBefore(node, para.childNodes[0]);
-*/
 
-//poner linea
+
+  // insertar linea antes de
   var para2 = document.getElementById("comentarios");
   para2.insertBefore(node2, para2.childNodes[0]);
+/*
+
 
 //clonar textitoooo
   var itm = document.getElementById("contenidoUsuario").lastChild;
   var cln = itm.cloneNode(true);
   var para5= document.getElementById("comentarios");
-  para2.insertBefore(cln, para2.childNodes[0]);
-
-
+  para5.insertBefore(cln, para5.childNodes[1]);
+  console.log(itm,cln,para5)
+*/
 }
